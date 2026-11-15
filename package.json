@@ -1,0 +1,29 @@
+{
+  "name": "astroguard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AstroGuard // Bio-Neural Space OS — mission secure access + dual-view orbital dashboard",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "api": "node server/index.js",
+    "dev:all": "concurrently -n web,api -c cyan,magenta \"next dev\" \"node server/index.js\""
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
